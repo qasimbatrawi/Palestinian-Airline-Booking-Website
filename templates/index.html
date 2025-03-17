@@ -339,125 +339,131 @@
                 <div class="special-offers-content">
                     <div class="row">
                         <!-- Offer Item -->
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-special-offer">
-                                <div class="special-offer-img-box">
-                                    <div class="special-offer-img">
-                                        <img src="../static/images/featured-flights/fc1.png" alt="Offer Image">
-                                    </div>
-                                    <div class="special-offer-info">
-                                        <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
-                                            <p>${{ flight1['price'] }}</p>
+
+                        {% if flight1 %}
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-special-offer">
+                                    <div class="special-offer-img-box">
+                                        <div class="special-offer-img">
+                                            <img src="../static/images/featured-flights/fc1.png" alt="Offer Image">
+                                        </div>
+                                        <div class="special-offer-info">
+                                            <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
+                                                <p>${{ flight1['price'] }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
-                                    <h2>
-                                        <a href="/"
-                                           class="fill-inputs"
-                                           data-departure="{{ flight1['departure_airport'] }}"
-                                           data-arrival="{{ flight1['arrival_airport'] }}"
-                                           data-date="{{ flight1['departure_date'] }}">
-                                           {{ flight1['departure_country'] }} to {{ flight1['arrival_country'] }}
-                                        </a>
-                                    </h2>
-                                    <p>
-                                        Enjoy a special discount on flights from {{ flight1['departure_country'] }} to {{ flight1['arrival_country'] }}. Limited time offer!
-                                    </p>
+                                    <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
+                                        <h2>
+                                            <a href="/"
+                                            class="fill-inputs"
+                                            data-departure="{{ flight1['departure_airport'] }}"
+                                            data-arrival="{{ flight1['arrival_airport'] }}"
+                                            data-date="{{ flight1['departure_date'] }}">
+                                            {{ flight1['departure_country'] }} to {{ flight1['arrival_country'] }}
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            Enjoy a special discount on flights from {{ flight1['departure_country'] }} to {{ flight1['arrival_country'] }}. Limited time offer!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endif %}
                         
-                        
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-special-offer">
-                                <div class="special-offer-img-box">
-                                    <div class="special-offer-img">
-                                        <img src="../static/images/featured-flights/fc2.png" alt="Offer Image">
-                                    </div>
-                                    <div class="special-offer-info">
-                                        <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
-                                            <p>${{ flight2['price'] }}</p>
+                        {% if flight2 %}
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-special-offer">
+                                    <div class="special-offer-img-box">
+                                        <div class="special-offer-img">
+                                            <img src="../static/images/featured-flights/fc2.png" alt="Offer Image">
+                                        </div>
+                                        <div class="special-offer-info">
+                                            <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
+                                                <p>${{ flight2['price'] }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
-                                    <h2>
-                                        <a href="/"
-                                           class="fill-inputs"
-                                           data-departure="{{ flight2['departure_airport'] }}"
-                                           data-arrival="{{ flight2['arrival_airport'] }}"
-                                           data-date="{{ flight2['departure_date'] }}">
-                                           {{ flight2['departure_country'] }} to {{ flight2['arrival_country'] }}
-                                        </a>
-                                    </h2>
-                                    <p>
-                                        Enjoy a special discount on flights from {{ flight2['departure_country'] }} to {{ flight2['arrival_country'] }}. Limited time offer!
-                                    </p>
+                                    <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
+                                        <h2>
+                                            <a href="/"
+                                            class="fill-inputs"
+                                            data-departure="{{ flight2['departure_airport'] }}"
+                                            data-arrival="{{ flight2['arrival_airport'] }}"
+                                            data-date="{{ flight2['departure_date'] }}">
+                                            {{ flight2['departure_country'] }} to {{ flight2['arrival_country'] }}
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            Enjoy a special discount on flights from {{ flight2['departure_country'] }} to {{ flight2['arrival_country'] }}. Limited time offer!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endif %}
                         
-                        
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-special-offer">
-                                <div class="special-offer-img-box">
-                                    <div class="special-offer-img">
-                                        <img src="../static/images/featured-flights/fc3.png" alt="Offer Image">
-                                    </div>
-                                    <div class="special-offer-info">
-                                        <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
-                                            <p>${{ flight3['price'] }}</p>
+                        {% if flight3 %}
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-special-offer">
+                                    <div class="special-offer-img-box">
+                                        <div class="special-offer-img">
+                                            <img src="../static/images/featured-flights/fc3.png" alt="Offer Image">
+                                        </div>
+                                        <div class="special-offer-info">
+                                            <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
+                                                <p>${{ flight3['price'] }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
-                                    <h2>
-                                        <a href="/"
-                                           class="fill-inputs"
-                                           data-departure="{{ flight3['departure_airport'] }}"
-                                           data-arrival="{{ flight3['arrival_airport'] }}"
-                                           data-date="{{ flight3['departure_date'] }}">
-                                           {{ flight3['departure_country'] }} to {{ flight3['arrival_country'] }}
-                                        </a>
-                                    </h2>
-                                    <p>
-                                        Enjoy a special discount on flights from {{ flight3['departure_country'] }} to {{ flight3['arrival_country'] }}. Limited time offer!
-                                    </p>
+                                    <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
+                                        <h2>
+                                            <a href="/"
+                                            class="fill-inputs"
+                                            data-departure="{{ flight3['departure_airport'] }}"
+                                            data-arrival="{{ flight3['arrival_airport'] }}"
+                                            data-date="{{ flight3['departure_date'] }}">
+                                            {{ flight3['departure_country'] }} to {{ flight3['arrival_country'] }}
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            Enjoy a special discount on flights from {{ flight3['departure_country'] }} to {{ flight3['arrival_country'] }}. Limited time offer!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        {% endif %}
                         
-                        
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="single-special-offer">
-                                <div class="special-offer-img-box">
-                                    <div class="special-offer-img">
-                                        <img src="../static/images/featured-flights/fc4.png" alt="Offer Image">
-                                    </div>
-                                    <div class="special-offer-info">
-                                        <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
-                                            <p>${{ flight4['price'] }}</p>
+                        {% if flight4 %}
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="single-special-offer">
+                                    <div class="special-offer-img-box">
+                                        <div class="special-offer-img">
+                                            <img src="../static/images/featured-flights/fc4.png" alt="Offer Image">
+                                        </div>
+                                        <div class="special-offer-info">
+                                            <div class="price" style="text-align: center;"> <!-- Inline style for centering -->
+                                                <p>${{ flight4['price'] }}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
-                                    <h2>
-                                        <a href="/"
-                                           class="fill-inputs"
-                                           data-departure="{{ flight4['departure_airport'] }}"
-                                           data-arrival="{{ flight4['arrival_airport'] }}"
-                                           data-date="{{ flight4['departure_date'] }}">
-                                           {{ flight4['departure_country'] }} to {{ flight4['arrival_country'] }}
-                                        </a>
-                                    </h2>
-                                    <p>
-                                        Enjoy a special discount on flights from {{ flight4['departure_country'] }} to {{ flight4['arrival_country'] }}. Limited time offer!
-                                    </p>
+                                    <div class="special-offer-txt" style="text-align: center;"> <!-- Inline style for centering -->
+                                        <h2>
+                                            <a href="/"
+                                            class="fill-inputs"
+                                            data-departure="{{ flight4['departure_airport'] }}"
+                                            data-arrival="{{ flight4['arrival_airport'] }}"
+                                            data-date="{{ flight4['departure_date'] }}">
+                                            {{ flight4['departure_country'] }} to {{ flight4['arrival_country'] }}
+                                            </a>
+                                        </h2>
+                                        <p>
+                                            Enjoy a special discount on flights from {{ flight4['departure_country'] }} to {{ flight4['arrival_country'] }}. Limited time offer!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
+                        {% endif %}
+
                         <script>
                             document.addEventListener('DOMContentLoaded', function () {
                                 // Get all links with the class "fill-inputs"
