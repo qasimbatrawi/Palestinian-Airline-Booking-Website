@@ -4,5 +4,5 @@ A complete web application developed with HTML and Flask for managing and bookin
 
 # Team Members
 
-- **Taleed Hamadneh** ([GitHub](https://github.com/taleed606))
+- **Taleed Hamadneh** [GitHub](https://github.com/taleed606)
 - **Salah Dawabsheh**
